@@ -7,8 +7,7 @@ import Header from "./components/Header";
 import Tmdb from "./Tmdb";
 import "./App.css";
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default () => {
+export default function App() {
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);
   const [blackHeader, setBlackHeader] = useState(false);
@@ -53,6 +52,18 @@ export default () => {
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+      <footer>
+        Feito com ReactJs <br />
+        Por Diogo Rocha
+      </footer>
+      {movieList.length <= 0 && (
+        <div className="loading">
+          <img
+            src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif"
+            alt="carregando"
+          />
+        </div>
+      )}
     </div>
   );
-};
+}

@@ -7,6 +7,7 @@ export default function FeaturedMovie({ item }) {
   for (let i in item.genres) {
     genres.push(item.genres[i].name);
   }
+
   return (
     <section
       className="featured"
