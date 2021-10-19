@@ -1,3 +1,5 @@
+# Project
+Clone the netflix website for study purposes, using ReactJs, neat css styling, separate components neatly tweaked.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
